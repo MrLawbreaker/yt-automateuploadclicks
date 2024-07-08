@@ -7,6 +7,9 @@
 // @match        https://studio.youtube.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/MrLawbreaker/yt-automateuploadclicks/main/script.js
+// @downloadURL  https://raw.githubusercontent.com/MrLawbreaker/yt-automateuploadclicks/main/script.js
+
 // ==/UserScript==
 
 (function() {
