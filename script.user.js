@@ -31,9 +31,10 @@
             button.style = 'color:red';
             // Define what happens when the button is clicked
             button.addEventListener('click', () => {
-                button.disabled = true;
+                
                 const lShowMoreButton = document.querySelector('#toggle-button.ytcp-video-metadata-editor');
                 if (lShowMoreButton) {
+                    button.disabled = true;
                     lShowMoreButton.click();
 
                     setTimeout(setBoxes, 1000);
