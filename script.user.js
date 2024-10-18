@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Youtube Upload Button Automation
 // @namespace    http://tampermonkey.net/
-// @version      2024-07-08
+// @version      2024-10-18
 // @description  add button to automate clicking NO AI & Hide From Subs
 // @author       Marco
 // @match        https://studio.youtube.com/*
@@ -19,15 +19,16 @@
     function addButtonToElement() {
         // Check if button already exists
         const lButton = document.querySelector('#wwbutton');
-
+        
         // Replace '#title.ytcp-uploads-dialog' with the correct selector of your element
         const lTitle = document.querySelector('#title.ytcp-uploads-dialog');
+
 
         if (!lButton && lTitle) {
             // Create a new button
             const button = document.createElement('button');
             button.id = 'wwbutton';
-            button.innerHTML = 'Click me';
+            button.innerText = 'KI und Subs';
             button.style = 'color:red';
             // Define what happens when the button is clicked
             button.addEventListener('click', () => {
